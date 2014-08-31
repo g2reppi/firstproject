@@ -1,0 +1,18 @@
+application: handy-contact-679
+version: 1
+runtime: php
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /uploadhandler.php
+  script: uploadhandler.php
+
+- url: /contenthandler
+  script: contenthandler.php
+
+- url: .*
+  script: main.php
+
+
+
